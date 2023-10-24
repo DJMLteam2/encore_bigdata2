@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = [
     {name = "8trider", email = "8trider@naver.com"},
+    {name = "jiughan", email = "wldnd4081@gmail.com"},
 ]
 dependencies = []
 requires-python = ">=3.8"
@@ -17,3 +18,8 @@ build-backend = "pdm.backend"
 [project.urls]
 "Homepage" = "https://github.com/DJMLteam2/encore_bigdata2"
 "Bug Tracker" = "https://github.com/DJMLteam2/encore_bigdata2/issues"
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.2",
+    "pytest-cov>=4.1.0",
+]
