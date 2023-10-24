@@ -1,6 +1,6 @@
 [project]
 name = "encore_bigdata2"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = [
     {name = "8trider", email = "8trider@naver.com"},
