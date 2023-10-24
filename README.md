@@ -3,7 +3,7 @@ This package is for the practice of Encore MLOps and Bigdata education course in
 
 ## Install
 ```Bash
-$ pip install hello-pysatellite
+$ pip install encore_bigdata2
 ```
 ## Dev.
 ```Bash
