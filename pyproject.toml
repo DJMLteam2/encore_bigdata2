@@ -1,0 +1,19 @@
+[project]
+name = "encore_bigdata2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "8trider", email = "8trider@naver.com"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.urls]
+"Homepage" = "https://github.com/DJMLteam2/encore_bigdata2"
+"Bug Tracker" = "https://github.com/DJMLteam2/encore_bigdata2/issues"
