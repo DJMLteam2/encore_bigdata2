@@ -1,4 +1,4 @@
-from src.encore_bigdata2.stock_and_price import samsung_price
+from encore_bigdata2.app_tjkpolisher import samsung_price
 
 def test_samsung_price():
     samsung_price()
