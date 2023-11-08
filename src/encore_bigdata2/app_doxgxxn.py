@@ -1,6 +1,23 @@
 import random
 import itertools
 import time
+import os
+import subprocess
+
+
+def cls():
+    if os.name == 'posix':
+        # macOS 또는 Linux
+        subprocess.call('clear', shell=True)
+    elif os.name == 'nt':
+        # Windows
+        subprocess.call('cls', shell=True)
+    else:
+        # 다른 운영 체제
+        print('\n' * 100)
+
+
+
 
 def coin_game(num):
 
@@ -25,7 +42,7 @@ def coin_game(num):
                 print('='*90)
                 print(f"{mem}가 마셔야할 술 {count}잔, 싫다면 코인을 던지세요")
                 answer = input("코인이 모두 뒷면(■,■)일 경우 당첨!! 코인을 던지시겠습니까?(Y/N) :")
-
+                cls()
                 if answer == 'Y':
                     result = random.choice(coin),random.choice(coin)
                     print("1......")
@@ -35,21 +52,24 @@ def coin_game(num):
                     print("3..................")
                     time.sleep(0.7)
 
+                    
                     print(f"코인 결과: {result} !!!!")
                     time.sleep(2)
-                    
+
                     if result[0] == '■' and result[1] == '■':
+                        cls()
                         print('='*90)
                         print("🌺팡팡💥파라바라~팡팡팡 🎊ヲヲヲヲヲヲヲヲヲヲヲ"*count)
 
                         print(f">>>>>>>>>>>>>  {mem} 당첨!! {count}잔을 마셔야합니다!")
-                        
+
                         game = False
                         break
                     else:
                         continue
-                
+
                 else:
+                    cls()
                     print('='*90)
                     print(f">>>>>>>>>>>>>포기하셨습니다!!! {mem}가 {count}잔을 마셔야합니다!")
                     game = False
